@@ -66,3 +66,50 @@
 
 // myFunction("Ömer", 10);
 
+// type Person = {
+//     name? : string,
+//     surname? : string,
+//     age? : number
+// };
+
+
+// type Dog = {
+//     age? : number,
+//     cins? : string,
+//     tur? : string
+// };
+
+
+// type DogPerson = Dog & Person;
+
+
+// const personDog : DogPerson =  {
+//     name : "John",
+//     surname : "Smith",
+//     age : 12,
+//     cins : "male",
+//     tur : "alabai"
+
+
+// };
+
+
+// console.log(personDog);
+
+
+
+import Person, {Student} from "./person";
+import Job from "./Job"
+
+
+console.log(Person.isim);
+console.log({
+    isim : "Ömer",
+    sinif : 123
+} as Student);
+
+console.log(Job.age);
+console.log(Job.jobTitle);
+console.log(Job.sleepTime);
+
+
